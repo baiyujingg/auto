@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="api_test"> <!--suite name可以自定义-->
+    <test verbose="2" preserve-order="true" name="POST">   <!--这里的name是最终呈现在测试报告上的用例名-->
+        <classes>
+            <class name="test.APITest"> <!--指定class的代码位置,这里是test包下的APITest.java文件-->
+                <methods>
+                    <include name="testPost"/> <!--指定代码中的哪个方法,这里指定的是saveGroup()方法-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="GET_1">   <!--这里的name是最终呈现在测试报告上的用例名-->
+        <classes>
+            <class name="test.APITest"> <!--指定class的代码位置,这里是test包下的APITest.java文件-->
+                <methods>
+                    <include name="testGet_1"/> <!--指定代码中的哪个方法,这里指定的是saveGroup()方法-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="GET_2">   <!--这里的name是最终呈现在测试报告上的用例名-->
+        <classes>
+            <class name="test.APITest"> <!--指定class的代码位置,这里是test包下的APITest.java文件-->
+                <methods>
+                    <include name="testGet_2"/> <!--指定代码中的哪个方法,这里指定的是saveGroup()方法-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

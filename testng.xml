@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="all_test">
+    <listeners>
+        <!--testng的XML配置文件中添加这些内容-->
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+
+    <!--通过suite-files可以指定多个xml文件,实现多个suite即测试套件的运行-->
+    <suite-files>
+        <!--模块1-->
+        <suite-file path="src/test/java/xml/pc_test.xml"></suite-file>
+
+        <!--模块2-->
+        <suite-file path="src/test/java/xml/api_test.xml"></suite-file>
+
+    </suite-files>
+</suite>

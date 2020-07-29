@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="pc_test">
+    <test verbose="2" preserve-order="true" name="搜索_1">
+        <classes>
+            <class name="test.PCTest">
+                <methods>
+                    <include name="search_1"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="搜索_2">
+        <classes>
+            <class name="test.PCTest">
+                <methods>
+                    <include name="search_2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
